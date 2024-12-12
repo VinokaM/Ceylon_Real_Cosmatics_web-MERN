@@ -1,0 +1,153 @@
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.mainback{
+    margin-right: 20px;
+}
+.mainname{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.maintitle{
+    font-size: 16px;
+    margin-left: 20px;
+    color: rgb(66, 66, 66);
+}
+
+.mainbtn{
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(96, 247, 146);
+    color: white;
+    font-size: 20px;
+}
+.mainimg{
+    width: 450px;
+    height: auto;
+}
+
+
+.secard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.secard1{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seimg{
+    width: 70px;
+    height: auto;
+}
+.sename{
+    color: #60f792;
+}
+
+
+
+
+
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.phead{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.plist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemimg{
+    width: 210px;
+    height: auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 5px 0px #888888;
+    border-radius: 8px;
+    margin: 20px;
+}
+.itemName{
+    margin-bottom: 0;
+}
+.itemprce{
+    font-size: 18px;
+}
+.itembtn{
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #60f792;
+    margin-bottom: 30px;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.itembtn:hover{
+    background-color: rgb(96, 247, 146);
+}
+.cart-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #60f792;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+.vision{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.visionimg{
+    width: 500px;
+    height: auto;
+}
+.visionhead{
+    font-size: 50px;
+    font-weight: bold;
+}
+.visiontitle{
+    font-size: 16px;
+    color: #646464;
+}
