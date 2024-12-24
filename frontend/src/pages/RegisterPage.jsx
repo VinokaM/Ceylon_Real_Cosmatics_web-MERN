@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import "./register.css";
 
 const RegisterPage = () => {
     const [name, setName] = useState('');
@@ -19,33 +20,46 @@ const RegisterPage = () => {
         }
     };
 
+    const handleSinin = async (e) => {
+        e.preventDefault();
+        navigate('/login');
+    };
+
     return (
-        <div className="flex justify-center items-center h-screen bg-gray-100">
-            <form className="bg-white p-8 rounded shadow-md w-96" onSubmit={handleSubmit}>
-                <h2 className="text-2xl font-bold mb-4">Register</h2>
+        <div className='loginpage1'>
+            <div className='mainbox1'>
+                <div className='rightbox1'>
+                <form className="form1" onSubmit={handleSubmit}>
+                <h2 className="formhead1">Register</h2>
                 <input
                     type="text"
                     placeholder="Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="block w-full p-2 border rounded mb-4"
+                    className="inputbox1"
                 />
                 <input
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="block w-full p-2 border rounded mb-4"
+                    className="inputbox1"
                 />
                 <input
                     type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="block w-full p-2 border rounded mb-4"
+                    className="inputbox1"
                 />
-                <button type="submit" className="bg-green-500 text-white px-4 py-2 rounded w-full">Register</button>
-            </form>
+                <button type="submit" className="submitbtn1">Register</button>
+                </form>
+                </div>
+                <div className='leftbox1'>
+                <h2 className='lefttitle1'>Have an Account</h2>
+                    <button onClick={handleSinin} className='leftbtn1'>sign in</button>
+                </div>
+            </div>
         </div>
     );
 };

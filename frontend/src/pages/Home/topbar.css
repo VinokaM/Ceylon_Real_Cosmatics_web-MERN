@@ -24,10 +24,42 @@
 }
 
 .login{
-    border: 1px solid rgb(96, 247, 146) ;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 20px;
+    background-color:rgb(96, 247, 146) ;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.login:hover{
+    background-color:rgb(116, 247, 160) ;
+    color: black;
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    background-color:rgb(61, 61, 61) ;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.logout:hover{
+    background-color: rgb(247, 109, 109);
 }
 
 .nav:hover{

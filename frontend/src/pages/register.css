@@ -1,0 +1,81 @@
+
+
+.loginpage1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.mainbox1{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+
+}
+.leftbox1{
+    height: 300px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #60f792;
+    border-radius: 0 10px 10px 0;
+}
+.rightbox1{
+    width: 450px;
+    padding: 30px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 0 0 10px;
+
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbox1{
+    width: 380px;
+    height: 40px;
+    margin: 10px;
+    background-color: aliceblue;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 2px solid #c2c2c2;
+    border-radius: 5px;
+}
+.submitbtn1{
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: #60f792;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.leftbtn1{
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #60f792;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.lefttitle1{
+    color: white;
+    text-align: center;
+}
+.formhead1{
+    color: #60f792;
+}

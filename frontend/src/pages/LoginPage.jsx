@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+import "./login.css";
+
 const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -19,26 +21,39 @@ const LoginPage = () => {
         }
     };
 
+    const handleSinup = async (e) => {
+        e.preventDefault();
+        navigate('/register');
+    };
+
     return (
-        <div className="flex justify-center items-center h-screen bg-gray-100">
-            <form className="bg-white p-8 rounded shadow-md w-96" onSubmit={handleSubmit}>
-                <h2 className="text-2xl font-bold mb-4">Login</h2>
+        <div className='loginpage'>
+            <div className='mainbox'>
+                <div className='leftbox'>
+                    <h2 className='lefttitle'>New here!</h2>
+                    <button onClick={handleSinup} className='leftbtn'>sign up</button>
+                </div>
+                <div className='rightbox'>
+                <form className="form" onSubmit={handleSubmit}>
+                <h2 className="formhead">Login</h2>
                 <input
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="block w-full p-2 border rounded mb-4"
+                    className="inputbox"
                 />
                 <input
                     type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="block w-full p-2 border rounded mb-4"
+                    className="inputbox"
                 />
-                <button type="submit" className="bg-green-500 text-white px-4 py-2 rounded w-full">Login</button>
-            </form>
+                <button type="submit" className="submitbtn">Login</button>
+                </form>
+                </div>
+            </div>
         </div>
     );
 };
