@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { CartContext } from '../../contexts/CartContext';
 import { useNavigate } from 'react-router-dom';
+import "./delivery.css";
 
 const Delivery = () => {
     const { cart, clearCart } = useContext(CartContext);
@@ -48,27 +49,32 @@ const Delivery = () => {
     };
 
     return (
-        <div>
+        <div className='dmain'>
+            <div className='dbox'>
             <h2>Delivery Details</h2>
             <input
                 name="customerName"
                 placeholder="Name"
                 value={deliveryDetails.customerName}
                 onChange={handleInputChange}
+                className='dinput'
             />
             <input
                 name="phone"
                 placeholder="Phone"
                 value={deliveryDetails.phone}
                 onChange={handleInputChange}
+                className='dinput'
             />
             <textarea
                 name="address"
                 placeholder="Address"
                 value={deliveryDetails.address}
                 onChange={handleInputChange}
+                className='dinput'
             ></textarea>
-            <button onClick={handleOrder}>Place Order</button>
+            <button className='paybtn1' onClick={handleOrder}>Place Order</button>
+            </div>
         </div>
     );
 };

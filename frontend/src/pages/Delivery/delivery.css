@@ -1,0 +1,37 @@
+.dmain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 50px;
+}
+.dinput{
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border:none;
+    margin: 10px;
+}
+.paybtn1{
+    width: 100px;
+    height: 40px;
+    background-color: #60f792;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.paybtn1:hover{
+    background-color: #0afa5a;
+}

@@ -1,6 +1,7 @@
-import React, { useContext,useState,useEffect } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../../contexts/CartContext';
 import { useNavigate } from 'react-router-dom';
+import "./cart.css";
 
 const Cart = () => {
     const { cart, updateQuantity, setCartVisible } = useContext(CartContext);
@@ -23,33 +24,35 @@ const Cart = () => {
 
     return (
         <div className="cart">
-            <h2>Your Cart</h2>
+            <h2 className='cartHead'>Your Cart</h2>
             {cart.length === 0 ? (
                 <p>Your cart is empty</p>
             ) : (
                 <>
                     {cart.map((item) => (
                         <div key={item.productId} className="cart-item">
-                            <img src={item.image} alt={item.name} />
-                            <div>
-                                <h3>{item.name}</h3>
-                                <p>Price: LKR {item.price}</p>
+                            <img className='cartImg' src={item.image} alt={item.name} />
+                            <div className='cartDis'>
+                                <h3 className='itemname'>{item.name}</h3>
+                                <p className='itemPrice'>Price: LKR {item.price}</p>
                                 <input
+                                className='cinput'
                                     type="number"
                                     value={item.quantity}
                                     onChange={(e) =>
-                                        updateQuantity(item.productId, parseInt(e.target.value))
+                                        updateQuantity(item.productId, parseInt(e.target.value, 10))
                                     }
                                     min="1"
                                 />
                             </div>
                         </div>
                     ))}
-                    <h3>Total Amount: LKR {totalAmount}</h3>
-                    <button onClick={handleCheckout}>Proceed to Delivery</button>
+                    <h3 className='total'>Total Amount: LKR {totalAmount}</h3>
+                    <button className='paybtn' onClick={handleCheckout}>Proceed to Delivery</button>
                 </>
             )}
         </div>
     );
 };
+
 export default Cart;
