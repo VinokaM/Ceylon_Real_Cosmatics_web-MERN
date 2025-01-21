@@ -34,7 +34,7 @@ const HomePage = () => {
     };
 
     return (
-        <div className="">
+        <div className=""> 
             <div className='main'>
                 <Fade cascade damping={0.1}>
                     <div className='mainback'>
